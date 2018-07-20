@@ -7,5 +7,5 @@
 * "Previous Settings" - sets settings from this file, otherwise deletes everything from your current playlists on widget.
 * "50 30 20" -  time to show one slide in seconds.
 
-
+![Interface](https://github.com/EkaterinaKuzkina/QT/blob/master/Player/Interface.png)
 
