@@ -122,7 +122,7 @@ void soundplayer::setPrevSets()
     m_lLwidg->clear();
     m_picwidg->clear();
     playlist->clear();
-    QFile file("/Users/ekaterinakuzkina/Player/muz_file.txt");
+    QFile file("/Users/ekaterinakuzkina/Player_1/muz_file.txt");
      if (!file.exists())
          qDebug()<<"error!";
      if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -148,7 +148,7 @@ void soundplayer::setPrevSets()
     }
     file.close();
 
-    QFile file_pic("/Users/ekaterinakuzkina/Player/pic_file.txt");
+    QFile file_pic("/Users/ekaterinakuzkina/Player_1/pic_file.txt");
      if (!file_pic.exists())
          qDebug()<<"error*";
      if (!file_pic.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -166,7 +166,7 @@ void soundplayer::setPrevSets()
      }
     file_pic.close();
 
-    QFile file_set("/Users/ekaterinakuzkina/Player/set_file.txt");
+    QFile file_set("/Users/ekaterinakuzkina/Player_1/set_file.txt");
     if (!file_set.exists())
         qDebug()<<"error%";
     if (!file_set.open(QIODevice::ReadOnly | QIODevice::Text))
@@ -180,7 +180,7 @@ void soundplayer::setPrevSets()
 
 void soundplayer::on_saveButton_clicked()
 {
-    QFile file("/Users/ekaterinakuzkina/Player/muz_file.txt");
+    QFile file("/Users/ekaterinakuzkina/Player_1/muz_file.txt");
     if (!file.open(QFile::WriteOnly|QFile::Truncate))
         qDebug()<<"error?";
     QTextStream out(&file);
@@ -200,7 +200,7 @@ void soundplayer::on_saveButton_clicked()
     }
     file.close();
 
-    QFile file_pic("/Users/ekaterinakuzkina/Player/pic_file.txt");
+    QFile file_pic("/Users/ekaterinakuzkina/Player_1/pic_file.txt");
     if (!file_pic.open(QFile::WriteOnly|QFile::Truncate))
           qDebug()<<"omg";
 
@@ -211,7 +211,7 @@ void soundplayer::on_saveButton_clicked()
     }
     file_pic.close();
 
-    QFile file_set("/Users/ekaterinakuzkina/Player/set_file.txt");
+    QFile file_set("/Users/ekaterinakuzkina/Player_1/set_file.txt");
     if (!file_set.open(QFile::WriteOnly|QFile::Truncate))
         qDebug()<<"omg";
 
