@@ -1,8 +1,8 @@
-### Description
+## Description
 
-<li> Interface
+### Interface
 
-Main menu. You can choose:
+#### Main menu. You can choose:
 * Orientation
 * Shift
 * Year 
